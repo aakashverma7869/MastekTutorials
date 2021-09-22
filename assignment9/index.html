@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    Enter Json Data<input type="text" name="jsonData" id="jsonData">
+    <!-- <button onclick="parseJsonData()">Get JavaScript Object</button> -->
+    <button id = 'parseJsonData'>Get JavaScript Object</button>
+    <div id="root"></div>
+    <script>
+        // function parseJsonData(){
+        //     const jsonData=document.getElementById("jsonData").value;
+        //     const obj=JSON.parse(jsonData);
+        //     const root=document.getElementById("root");
+        //     root.innerHTML=obj.firstName;
+        // }
+
+
+        $(document).ready(function(){
+    $("#parseJsonData").click(function(){
+        const jsonData  = $("#jsonData").val();
+        const obj = JSON.parse(jsonData);
+        const root = $("#root");
+  
+        root.append("The parse JSON Data is ");
+        //  const h3 = $("<h3 id = 'h3'></h3>");
+        // //  h3.id="h3"
+        // h3.append(jsoString);
+        $("#root").after(obj.firstName);  
+        // firstName="";
+        // lastName="";
+    });
+});
+    </script>
+</body>
+</html>
