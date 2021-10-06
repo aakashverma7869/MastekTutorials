@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="welcome.html" method="get" onsubmit="return validateForm()">
+    <div>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <span id="firstNameError"></span>
+    </div>
+
+
+    <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+        <span id="lastNameError"></span>
+    </div>
+   <div>
+        <p>Gender:</p>
+        <input type="radio" id="html" name="fav_language" value="Male" checked>
+        <label for="html">Male</label><br>
+        <input type="radio" id="css" name="fav_language" value="Female">
+        <label for="css">Female</label><br>
+       </div>
+      <div>
+        <label for="cars">City :</label>
+        <select name="cars" id="cars">
+          <option value="Mumbai" selected>Mumbai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Chennai">Chennai</option>
+        
+        </select>
+        <br><br>
+         </div> 
+
+         <div>
+            <p>Hobbies :</p>
+            <input type="checkbox" id="vehicle1" name="Reading" value="Reading">
+            <label for="vehicle1"> Reading</label><br>
+            <input type="checkbox" id="Dancing" name="Dancing" value="Dancing">
+            <label for="vehicle2"> Dancing</label><br>
+            <input type="checkbox" id="Singing" name="Singing" value="Singing">
+            <label for="vehicle3"> Singing</label><br><br>
+            <input type="checkbox" id="Sports" name="Sports" value="Sports">
+            <label for="vehicle3"> Sports</label><br><br>
+             </div>
+             <div>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+                 </div>
+
+                 <div>
+                    <label for="email">Enter your Phone:</label>
+                    <input type="number" id="number" name="number">
+                    <span id="phoneError"></span>
+                     </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
