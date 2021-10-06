@@ -1,0 +1,9 @@
+{
+    "people":[
+        {  "firstName":"Aakash" ,  "lastName" :"verma"},
+        {  "firstName":"dorden",  "lastName" :"Bombay"},
+        {  "firstName":"senis",  "lastName" :"dadman"},
+        {  "firstName":"Cerry",  "lastName" :"lwn"},
+        {  "firstName":"laksha",  "lastName" :"Sharma"}        
+    ]
+}
