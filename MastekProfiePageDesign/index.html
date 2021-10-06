@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  </head>
+  <body>  
+      <div class= "flex-class">  
+        <span class= "mobile-show" style="font-size:30px;cursor:pointer;background-color: #e5e9ec;
+        padding: 0px 7px 7px 8px;" onclick="openNav()">&#9776; </span>
+    <img src="masteklogo.png" style="margin-right: 2rem;" alt="Italian Trulli"/>
+    <form class="example" action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="mobile-hide" style="margin: 1rem;">
+      <i class="fa fa-bell"></i>
+      <i class="fa fa-calendar"></i>
+      <i class="fa fa-flag"></i>
+      </div>
+</div>
+
+     
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <div class="flex-coloumn">
+      <div class="btn-wrap-box">
+  <div class="dropdownn">
+    <button class="dropbtnn">Applications</button>
+    <div class="dropdownn-content">
+    
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdownn">
+    <button class="dropbtnn">Corporate function</button>
+    <div class="dropdownn-content">
+       
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdownn">
+    <button class="dropbtnn">Collaboration Portals</button>
+    <div class="dropdownn-content">
+       
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdownn">
+    <button class="dropbtnn">External links</button>
+    <div class="dropdownn-content">
+       
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdownn">
+    <button class="dropbtnn">About Mastek</button>
+    <div class="dropdownn-content">
+        
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdownn">
+    <button class="dropbtnn">Support</button>
+    <div class="dropdownn-content">
+        
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+  <div class="navbar">
+    <p>My Profile</p> 
+  </div>
+
+  <div class="container-main">
+
+  <div class="bluecheck">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1">  By selecting the checkbox for personal information consent, you have agreed to share your personal information with Mastek Ltd. Read disclaimer given below.</label><br>
+  </div>
+
+ 
+
+  <!-- <div class="btn mobile-hide" style="background-color: #00a6d6;
+  padding: 0px;
+  font-size: 13px;
+  /* float: right; */
+  border-radius: 0px;
+  color: #fff; width: 6rem;"><span style="font-size: 10px;">My skills</span></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Box-wrapper">
+
+
+
+  <div class="wrapper">
+    <div class="container new-cnt">
+      <img src= "https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=aakash15085%40mastek.com&amp;size=S" alt="" class="profile-img">
+      
+      <div class="content">
+        <div class="sub-content">
+          <h1>Aakash verma</h1>
+          <span>Software enginner</span>
+        
+         
+        </div>
+        <div class="data">
+          <div id="dvPersonalEmailId" class="heading-box">
+        
+         <div style="display: flex;">  <div style="background-color: rgb(212, 208, 208); margin-right: 0.5rem; border-radius: 50%; width: 25px; padding: 5px;"> <i class="fa fa-envelope"></i></div> <span  class="" style="color: skyblue;">Aakash.verma@mastek.com</span><br> </div>
+            <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+           
+            <div class="edit" style="display:none;margin-top:10px">
+
+
+                <span>Confirmation Key</span>
+                <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+                <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+                <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+            </div>
+        </div>
+        <div id="dvPersonalEmailId" class="heading-box">
+        
+          <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+          <div style="display: flex;">  <div style="background-color: rgb(212, 208, 208); margin-right: 0.5rem; border-radius: 50%; width: 25px; padding: 5px;"><i class="fa fa-phone"></i>   </div>   <span style=" border-bottom: solid 1px #ddd;  padding-right: 6rem;"> 8899949362</span> 
+
+          <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i></div>
+          <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+          <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+
+          <div class="edit" style="display:none;margin-top:10px">
+
+
+              <span>Confirmation Key</span>
+              <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+              <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+              <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+          </div>
+      </div>
+  
+      <div id="dvPersonalEmailId" class="heading-box">
+        <i class="fa fa-user"></i>  <span  class="heading-box-grey">About Me</span><br>
+        <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+        <span style=" border-bottom: solid 1px #ddd;  padding-right: 7rem;"> -I am developer </span>
+        <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i>
+        <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+        <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+
+        <div class="edit" style="display:none;margin-top:10px">
+
+
+            <span>Confirmation Key</span>
+            <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+            <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+            <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+        </div>
+    </div>
+
+    <div id="dvPassVisa" data-confidential="true" class="confidential heading-box">
+
+     Certification<a target="_blank" href="">
+          <i class="fa fa-plus-circle"
+             style="float: right;" data-toggle="tooltip" data-placement="bottom" data-original-title="Add Passport / Visa Details"></i>
+      </a>
+  </div>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  
+
+  <div class="wrapper">
+    <div class="container new-cnt">
+      <!-- <img src="masteklogo.png" alt="" class="profile-img"> -->
+      
+      <div class="content-rest-box">
+        <div>
+          <h2 style="padding: 0px 10px 10px 0; font-weight: 500; border-bottom: solid 1px #ddd">
+              <img src="https://mastekgroup.sharepoint.com/_catalogs/masterpage/Shalimar/images/fav-icons-blk/gatepass.png?ctag=210916"
+                   alt="..." style="height: 25px "><span style="padding: 10px">Employment Details</span>
+          </h2>
+          <!-- <ul> -->
+           
+                  <div id="EmployeeNo" class="heading-box">
+                      <span class="heading-box-grey">Employee No. </span>
+                      <br><span id="txtEmployeeNo">group_1_team</span>
+                  </div>
+                 
+            
+            
+                  <div id="COE" class="heading-box" >
+                      <span class="heading-box-grey" >Service Line</span>
+                      <br><span id="txtCOE">Software Development</span>
+                  </div>
+            
+                  <div id="SBUDesc" class="heading-box">
+                      <span class="heading-box-grey">Unit</span>
+                      <br><span id="txtSBUDesc">OCC Development</span>
+                  </div>
+            
+                  <div id="CCID" class="heading-box" >
+                      <span class="heading-box-grey">Cost Center</span>
+                      <br><span id="txtCCID">Talent Pool- Application Development-Off</span>
+                  </div>
+            
+                 
+           
+                  <div id="Area" class="heading-box" >
+                      <span class="heading-box-grey">Area </span>
+                      <br><span id="txtArea">Global</span>
+                  </div>
+            
+                  <div id="SubArea" class="heading-box">
+                      <span class="heading-box-grey">Sub Area </span>
+                      <br><span id="txtSubArea">PAN INDIA</span>
+                  </div>
+               
+                      <div id="WorkCenterNo" class="heading-box">
+                          <span class="heading-box-grey">Grade </span>
+                          <br><span > 04</span>
+                      </div>
+                
+          <!-- </ul> -->
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="wrapper">
+    <div class="container new-cnt">
+      <!-- <img src="masteklogo.png" alt="" class="profile-img"> -->
+      
+      <div class="content-rest-box">
+        <div>
+          <h2 style="padding: 0px 10px 10px 0; border-bottom: solid 1px #ddd">
+              <i class="fa fa-sitemap" style="font-size: 24px"></i><span style="padding: 10px">Organization</span>
+          </h2>
+              <div id="empOrg" style="margin-top: 5%;" class="image-containerr">
+            
+               <div style="display: flex;"> <div style="border-radius:50%"><img  style="margin-right: 1rem; border-radius: 50%;" class="img_Hierarchy" id="img_aakash15085" alt="i:0#.f|membership|aakash15085@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=aakash15085%40mastek.com&amp;size=S" data-themekey="#"></div><span class="heading-box">Aakash verma </span> </div>
+               <div style="display: flex;"> <div style="border-radius:50%"><img  style="margin-right: 1rem; border-radius: 50%;" class="img_Hierarchy" id="img_aakash15085" alt="i:0#.f|membership|aakash15085@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=aakash15085%40mastek.com&amp;size=S" data-themekey="#"></div><span class="heading-box">Aakash verma </span> </div>
+               <div style="display: flex;"> <div style="border-radius:50%"><img  style="margin-right: 1rem; border-radius: 50%;" class="img_Hierarchy" id="img_aakash15085" alt="i:0#.f|membership|aakash15085@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=aakash15085%40mastek.com&amp;size=S" data-themekey="#"></div><span class="heading-box">Aakash verma </span> </div>
+               <div style="display: flex;"> <div style="border-radius:50%"><img  style="margin-right: 1rem; border-radius: 50%;" class="img_Hierarchy" id="img_aakash15085" alt="i:0#.f|membership|aakash15085@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=aakash15085%40mastek.com&amp;size=S" data-themekey="#"></div><span class="heading-box">Aakash verma </span> </div>
+
+              </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+      <div class="container-small new-cnt">
+        <!-- <img src="masteklogo.png" alt="" class="profile-img"> -->
+        
+        <div class="content-rest-box">
+          <div>
+            <h2 style="padding: 0px 10px 10px 0; border-bottom: solid 1px #ddd ; font-weight: 500; font-size: 18px;">
+                <i class="fa fa-info-circle" style="font-size: 24px"></i><span style="padding: 0 0 0 10px">
+                    Personal Information
+                </span>
+                <i class="fa fa-lock" style="font-size: 15px; color: #b1aeae; float: right;" >
+                </i>
+            </h2>
+          
+            
+                    <div id="Gender" class="heading-box" >
+                        <span class="heading-box-grey">Gender</span>
+                        <br><span id="txtGender">Male</span>
+                    </div>
+              
+                    <div id="DOB"  class="heading-box">
+                        <span class="heading-box-grey">Birthday</span>
+                        <br><span id="txtDOB">20 April</span>
+                    </div>
+              
+
+                    <span style="color:#b1aeae">Other Details</span>
+
+                    <ul id="ulOtherDetails">
+                        <li>
+                            <div id="dvPassVisa" data-confidential="true" class="confidential heading-box">
+
+                                Passport / Visa Details<a target="_blank" href="">
+                                    <i class="fa fa-plus-circle"
+                                       style="float: right;" data-toggle="tooltip" data-placement="bottom" data-original-title="Add Passport / Visa Details"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="dvFamily" data-confidential="true" class="confidential">
+
+                                Family Details<a target="_blank" href=""> <i class="fa fa-plus-circle" style="float: right;" data-toggle="tooltip" data-placement="bottom" data-original-title="Add Family Details"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          
+        </div>
+        </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="wrapper">
+        <div class="container-small new-cnt">
+          <!-- <img src="masteklogo.png" alt="" class="profile-img"> -->
+          
+          <div class="content-rest-box">
+            <div>
+              <h2 style="padding: 0px 10px 10px 0; border-bottom: solid 1px #ddd; font-size: 18px; font-weight: 400;">
+                  <i class="fa fa-phone-square" style="font-size: 24px"></i><span style="padding: 10px">Contact Information</span>
+                  <i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
+             
+                </h2>
+             
+                      <div id="dvPersonalEmailId" class="heading-box">
+                          <span  class="heading-box-grey">Personal Email Id</span><br>
+                          <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+                          <span style=" border-bottom: solid 1px #ddd;"> aakashverma7868@gmail.com</span>
+                          <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i>
+                          <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+                          <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+  
+                          <div class="edit" style="display:none;margin-top:10px">
+  
+  
+                              <span>Confirmation Key</span>
+                              <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+  
+                              <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+                              <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+                          </div>
+                      </div>
+                      <div id="dvPersonalEmailId" class="heading-box">
+                        <span  class="heading-box-grey">Residence number</span><br>
+                        <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+                        <span style=" border-bottom: solid 1px #ddd;"> 8899949362</span>
+                        <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i>
+                        <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+                        <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+
+                        <div class="edit" style="display:none;margin-top:10px">
+
+
+                            <span>Confirmation Key</span>
+                            <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+                            <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+                            <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+                        </div>
+                    </div>
+                
+                    <div id="dvPersonalEmailId" class="heading-box">
+                      <span  class="heading-box-grey">Current address</span><br>
+                      <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+                      <span style=" border-bottom: solid 1px #ddd;"> B79 Rajendar nagar Ghaziabad,</span>
+                      <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i>
+                      <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+                      <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+
+                      <div class="edit" style="display:none;margin-top:10px">
+
+
+                          <span>Confirmation Key</span>
+                          <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+                          <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+                          <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+                      </div>
+                  </div>
+          </div>
+          </div>
+        </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="wrapper">
+    <div class="container-small new-cnt ">
+      <!-- <img src="masteklogo.png" alt="" class="profile-img"> -->
+      
+      <div class="content-rest-box">
+        <div>
+          <h2 style="padding: 0px 10px 10px 0; border-bottom: solid 1px #ddd; font-size: 18px; font-weight: 400;">
+            <i class="fa fa-ambulance" style="font-size: 24px"></i><span style="padding: 10px">
+              Emergency
+              Details
+          </span>
+              <i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
+         
+            </h2>
+         
+                  <div id="dvPersonalEmailId" class="heading-box">
+                      <span  class="heading-box-grey">Blood Group</span><br>
+                      <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+                      <span style=" border-bottom: solid 1px #ddd; padding-right: 7rem;"> B+</span>
+                      <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i>
+                      <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+                      <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+
+                      <div class="edit" style="display:none;margin-top:10px">
+
+
+                          <span>Confirmation Key</span>
+                          <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+                          <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+                          <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+                      </div>
+                  </div>
+                  <div id="dvPersonalEmailId" class="heading-box">
+                    <span  class="heading-box-grey">Emergency Contact Name</span><br>
+                    <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+                    <span style=" border-bottom: solid 1px #ddd;  padding-right: 7rem;"> Dr. Vishal verma</span>
+                    <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i>
+                    <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+                    <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+
+                    <div class="edit" style="display:none;margin-top:10px">
+
+
+                        <span>Confirmation Key</span>
+                        <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+                        <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+                        <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+                    </div>
+                </div>
+            
+                <div id="dvPersonalEmailId" class="heading-box">
+                  <span  class="heading-box-grey">Emergency Contact Number</span><br>
+                  <!-- <input type="text" id="PersonalEmailId" value="" disabled> -->
+                  <span style=" border-bottom: solid 1px #ddd;  padding-right: 7rem;"> 8899949362</span>
+                  <i class="fa fa-pencil" onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Personal EmailId" /></i>
+                  <i class="fa fa-save" style="display: none" onclick="saveInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Personal EmailId"></i>
+                  <!-- <i class="fa fa-refresh" style="display: none"  onclick="enableInput('PersonalEmailId')" data-toggle="tooltip" data-placement="bottom" data-original-title="Reset Personal EmailId"></i> -->
+
+                  <div class="edit" style="display:none;margin-top:10px">
+
+
+                      <span>Confirmation Key</span>
+                      <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Check your email inbox for confirmation Key"></i>   <br>
+
+                      <input type="text" id="ConfirmationKey" maxlength="50" style="width: 45%">
+                      <i class="fa fa-check" onclick="confirmPersonalEmailId()" data-toggle="tooltip" data-placement="bottom" data-original-title="Verify Confirmation Key"></i>
+                  </div>
+              </div>
+      </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="orangecheck">
+  <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> -->
+  <label for="vehicle1"> Disclaimer : Your privacy is important to us. Mastek uses the personal data provided by you on this form for the organizations internal processing requirement as part your employment. We will use your data for the organizations communication and notification. We will share your data with Mastek controlled affiliates and subsidiaries; with vendors working on our behalf; when required by law or to respond to legal process; to protect our customers ; to protect lives; to maintain the security of our services; and to protect the right of property or Mastek. Mastek is committed to protecting the security of your personal data. Mastek requests you to inform us about any changes to your personal data via an email to your respective Human Resource personal or by sending an email to PIIdatamodification@mastek.com .</label><br>
+</div>
+
+
+</div>
+<div class="footer">
+  <p>© Copyright 2016 - 2021. All rights reserved | Privacy Notice</p>
+</div>
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+     
+  </body>
+</html>
