@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color:white;
+    font-size: medium;
+}
+#firstNameError{
+    color:red;
+}
+
+#lastNameError{
+    color:red;
+}
